@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: npm install && npm run build
+      - run: npm install && PUBLIC_URL=/weekly-draw npm run build
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
