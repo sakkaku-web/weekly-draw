@@ -11,9 +11,9 @@ const emotions = [
   "Angry",
   "Bad",
 ];
-const prompts = [
-  // TODO: add prompts
-];
+// const prompts = [
+//   // TODO: add prompts
+// ];
 
 interface WeeklyDraw {
   color: string;
