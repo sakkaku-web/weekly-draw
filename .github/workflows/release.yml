@@ -9,6 +9,8 @@ jobs:
   publish-gh:
     name: Publish Github Pages
     runs-on: ubuntu-latest
+    env: 
+      PUBLIC_URL: "/weekly-draw"
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
