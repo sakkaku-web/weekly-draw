@@ -2,15 +2,7 @@ import { startOfWeek } from "date-fns";
 import seedrandom from "seedrandom";
 
 const colors = ["Yellow", "Green", "Blue", "Purple", "Pink", "Red", "Orange"];
-const emotions = [
-  "Happy",
-  "Disgusted",
-  "Sad",
-  "Surprised",
-  "Fearful",
-  "Angry",
-  "Bad",
-];
+const emotions = ["Happy", "Disgusted", "Sad", "Surprised", "Fearful", "Angry", "Bad"];
 // const prompts = [
 //   // TODO: add prompts
 // ];
@@ -36,11 +28,13 @@ function App() {
 
   const weekly = generateWeeklyDraw(new Date());
 
-  return <div className="flex flex-col justify-center items-center gap-2">
-    <div className="font-bold text-2xl"> Prompt: {weekly.prompt} </div>
-    <div> Color: {weekly.color} </div>
-    <div> Emotion: {weekly.emotion} </div>
-  </div>;
+  return (
+    <div className="flex flex-col justify-center items-center gap-2 p-4">
+      <div className="font-bold text-2xl"> Prompt: {weekly.prompt} </div>
+      <div> Color: {weekly.color} </div>
+      <div> Emotion: {weekly.emotion} </div>
+    </div>
+  );
 }
 
 export default App;
